@@ -1,3 +1,4 @@
+package modelo;
 
 public class Fornecedor {
 	private String nomeEmpresa;
