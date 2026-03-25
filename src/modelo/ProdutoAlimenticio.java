@@ -18,10 +18,12 @@ public class ProdutoAlimenticio extends Produto {
 	
 	@Override
 	public double calcularPrecoFinal() {
+		double precoComLucro = precoBase * 1.2;
+		
 		if (diasValidade <= 5) {
-			return (precoBase * 1.2) * 0.7;
+			return precoComLucro * 0.7;
 		} else {
-			return precoBase * 1.2;
+			return precoComLucro;
 		}
 	}
 	
