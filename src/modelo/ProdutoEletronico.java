@@ -18,10 +18,10 @@ public class ProdutoEletronico extends Produto {
 
 	@Override
 	public double calcularPrecoFinal() {
-		double precoSemGarantiaEstendida = precoBase * 1.5;
+		double precoSemGarantiaEstendida = precoBase * 1,5;
 		
 		if (mesesGarantia > 12) {
-			return precoSemGarantiaEstendida * 1.15;
+			return precoSemGarantiaEstendida * 1,15;
 		} else {
 			return precoSemGarantiaEstendida;
 		}
